@@ -1,0 +1,134 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d6eafe, #ffffff);
+}
+
+
+.input-main-dev {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: auto;
+}
+
+.input-main-dev label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input-main-dev input,
+.input-main-dev select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+  
+}
+.input-main-dev>textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 300px;
+  box-sizing:content-box;
+  min-height: 100px;
+}
+.card-button {
+  width: 50%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-button:hover {
+  background: linear-gradient(135deg, #0056b3, #00408a);
+  transform: scale(1.02);
+}
+
+.input-main-dev input:focus,
+.input-main-dev textarea:focus,
+.input-main-dev select:focus,
+.child h2:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Button */
+.input-main-dev> button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-main-dev> button:hover {
+  background: linear-gradient(135deg, #0056b3, #00408a);
+  transform: scale(1.05);
+}
+
+/* Todo List Container */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Individual Todo Card */
+.child {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: 0.3s ease-in-out;
+  border-left: 8px solid #007bff;
+  cursor: pointer;
+}
+
+.child:hover {
+  transform: translateY(-5px);
+}
+
+/* Todo Card Text */
+.child h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-main-dev {
+    width: 80%;
+  }
+
+  .child {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
